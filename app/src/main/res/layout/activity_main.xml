@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+            />
+            <EditText
+                android:id="@+id/edtPriceMin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Min"
+                android:inputType="text"
+                />
+            <EditText
+                android:id="@+id/edtPriceMax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Max"
+                android:inputType="text"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dien tich"
+                />
+            <EditText
+                android:id="@+id/edtAreaMin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Min"
+                android:inputType="text"
+                />
+            <EditText
+                android:id="@+id/edtAreaMax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Max"
+                android:inputType="text"
+                />
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Section"
+            />
+        <NumberPicker
+            android:id="@+id/section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+        <Button
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"/>
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/elvMobiles"
+        android:layout_width="match_parent"
+        android:layout_height="274dp"></ExpandableListView>
+    <Button
+        android:id="@+id/addButton"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="4dp"
+        android:drawableTint="#ff0000"
+        android:text="Them phong" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="match_parent">
+            <EditText
+                android:id="@+id/edtArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Dien tich"
+                android:inputType="text"
+                />
+            <EditText
+                android:id="@+id/edtPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Gia Nha"
+                android:inputType="text"
+                />
+            <EditText
+                android:id="@+id/edtElectric"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tien dien"
+                android:inputType="text"
+                />
+            <EditText
+                android:id="@+id/edtWater"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tien Nuoc"
+                android:inputType="text"
+                />
+            <EditText
+                android:id="@+id/edtSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Khu Vuc"
+                android:inputType="text"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
